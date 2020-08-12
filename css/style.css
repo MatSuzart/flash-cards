@@ -11,13 +11,13 @@ a {
     text-decoration: none;
 }
 .header {
-background-color: gray;
+background-color: gainsboro;
 height: 40px;
 padding-top: 8px;
 padding-bottom: 8px;
 }
 .header-title {
-    color: dimgray;
+    color: gray;
     display: inline;
     vertical-align: middle;
 }
@@ -42,32 +42,4 @@ padding-bottom: 8px;
 }
 ol, li, ul {
     list-style: none;
-}
-.card {
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 16px;
-    width: 25%;
-}
-
-.card_colorFrist{
-    background-color: red;
-}
-.card_colorSecond {
-    background-color: green;
-}
-.card-colors {
-display: inline-block;
-width: 32px;
-height: 32px;
-text-indent: -9999px;
-overflow: hidden;
-border-radius: 50%;
-border: 2px solid rgba(0,0,0.5);
-}
-.card-colors-colorFirst {
-    background-color: red;
-}
-.card-colors-colorSecond{
-    background-color: green;
 }

@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <title>Code Flash Card</title>
 </head>
 <body>
     <header class="header container">
         <h1 class="header-title">CS Flash Cards</h1>
-
-        <nav class="header-menu">
-            <ul>
-                <li class="header-button"><a href="">Linhas</a></li>
-                <li class="header-button"><a href="">?</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section class="container">
-        <ol>
-            <li class="card card_colorFrist">
-                <nav>
-                    <ul>
-                        <li><a href=""></a></li>
-                    </ul>
-                </nav>
-                <p>KSAKSAKSASKASAKS</p>
-                </li>
-        </ol>
-    </section>
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <div class="btn-group btn-group-lg" role="group" aria-label="card type">
+                <a href="{{ url_for('general') }}" class="btn btn-{{ "primary" if card_type == "general" else "default" }}">General</a>
+                <a href="{{ url_for('code') }}" class="btn btn-{{ "primary" if card_type == "code" else "default" }}">Code</a>
+            </div>
+        </div>
+    </div>
 
+    <hr/>
+
+    <div class="row memorizePanel">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="panel panel-default cardFront">
+                <div class="panel-body">
+                    <div class="alignContainer">
+                        <div class="alignMiddle frontText">
+                            <h3 class="text-center">01</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary cardBack">
+                <div class="panel-body">
+                    <div class="alignContainer">
+                        <div class="alignMiddle frontText">
+                                    <div class="text-center largerText">
+
+                                    </div>
+                                <pre><code>Text</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
 </body>
 </html>
