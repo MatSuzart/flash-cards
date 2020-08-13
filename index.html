@@ -12,14 +12,14 @@
 </head>
 <body>
     <header class="header container">
-        <h1 class="header-title">CS Flash Cards</h1>
+        <h1 class="header-title">CS Flash-Cards</h1>
     </header>
 
     <div class="row">
         <div class="col-xs-12 text-center">
             <div class="btn-group btn-group-lg" role="group" aria-label="card type">
-                <a href="{{ url_for('general') }}" class="btn btn-{{ "primary" if card_type == "general" else "default" }}">General</a>
-                <a href="{{ url_for('code') }}" class="btn btn-{{ "primary" if card_type == "code" else "default" }}">Code</a>
+                <button class="btn btn-primary">General</button>
+                <button class="btn btn-primary">Code</button>
             </div>
         </div>
     </div>
