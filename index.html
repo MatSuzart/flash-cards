@@ -8,49 +8,40 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <title>Code Flash Card</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     <title>Code Flash Card</title>
 </head>
 <body>
-    <header class="header container">
+    <header class="flash-card">
         <h1 class="header-title">CS Flash-Cards</h1>
     </header>
 
+<div class="container">
     <div class="row">
         <div class="col-xs-12 text-center">
             <div class="btn-group btn-group-lg" role="group" aria-label="card type">
-                <button class="btn btn-primary">General</button>
-                <button class="btn btn-primary">Code</button>
+                <button class="btn btn-primary tab active">General</button>
+                <button class="btn btn-primary tab">Code</button>
             </div>
+
         </div>
     </div>
+<div class="tabbody" style="display:block">
+    What ?
+</div>
+<div class="tabbody" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h5 class="card-title">Light card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</div>
 
     <hr/>
-
-    <div class="row memorizePanel">
-        <div class="col-xs-8 col-xs-offset-2">
-            <div class="panel panel-default cardFront">
-                <div class="panel-body">
-                    <div class="alignContainer">
-                        <div class="alignMiddle frontText">
-                            <h3 class="text-center">01</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-primary cardBack">
-                <div class="panel-body">
-                    <div class="alignContainer">
-                        <div class="alignMiddle frontText">
-                                    <div class="text-center largerText">
-
-                                    </div>
-                                <pre><code>Text</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-    </div>
+    
 </body>
 </html>
