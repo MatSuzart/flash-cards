@@ -1,25 +1,20 @@
-/*
-$(function(){
-	$('.tab').on('click',function(){
-	$('.active').removeClass('active');
-	$(this).addClass('active');
+var campos = [
+	document.querySelector('#front'),
+	document.querySelector('#back'),
+];
 
-	var item = $('.active').index();
-        $('.tabbody').hide();
-		$('.tabbody').eq(item).show();
-	});
-});
-*/
-var $newCard = document.querySelector('.newCard');
-var $newCardContent = document.querySelector('.newCard-content');
+console.log(campos);
 
-$newCard.addEventListener('submit',function(event){
-	
-	if($newCardContent.value==''){
+var ul = document.querySelector('ul');
+
+document.querySelector('.form').addEventListener('submit', function(event){
 	event.preventDefault();
 
+	var li = document.createElement('li');
 
-	console.log('is empty');
-	}
-	
+	campos.forEach(function(campo){
+
+		
+	});
+
 });
