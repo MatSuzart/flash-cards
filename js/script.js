@@ -14,7 +14,7 @@ document.querySelector('.form').addEventListener('submit', function(event){
 
 	campos.forEach(function(campo){
 
-		
+		console.log(ul);
 	});
 
 });
